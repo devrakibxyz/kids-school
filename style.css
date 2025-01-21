@@ -12,8 +12,14 @@ body {
   --sky: rgb(1, 172, 253);
   --sky-light: rgb(5, 212, 223);
   --blu: rgb(93, 88, 239);
+  --black: rgb(0, 0, 0);
 }
 /* shared styles */
+
+.title-text {
+  font-size: 46px;
+  color: var(--black);
+}
 
 .btn {
   background-color: rgb(254, 163, 1);
@@ -75,6 +81,40 @@ body {
   color: var(--blu);
 }
 
+/* banner-style */
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-content {
+  max-width: 55%;
+  margin-top: 120px;
+}
+.banner-content h2 {
+  font-size: 56px;
+  line-height: 56px;
+}
+.banner-content p {
+  color: rgb(17, 17, 17);
+  font-weight: 400;
+  font-size: 20px;
+  padding: 20px 0;
+}
+#banner-btn {
+  background-color: var(--black);
+}
+.banner .hero-img {
+  width: auto;
+  height: auto;
+}
+.empowering {
+  color: var(--orange);
+}
+.vision {
+  color: var(--sky);
+}
+
 /* responsive */
 @media screen and (max-width: 576px) {
   .menu-button,
@@ -83,5 +123,30 @@ body {
   }
   .bars-icon {
     display: block;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+  }
+  .banner-content h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .banner-content {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .banner-content p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .hero-img img {
+    width: 90%;
+    height: 100%;
+  }
+  #banner-btn {
+    font-size: 16px;
   }
 }

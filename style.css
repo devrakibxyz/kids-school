@@ -493,7 +493,8 @@ footer {
   .section-content,
   .Curriculum,
   .story-section,
-  header {
+  header,
+  footer {
     width: 90%;
   }
   .hero-img img {

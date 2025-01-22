@@ -13,6 +13,7 @@ body {
   --sky-light: rgb(5, 212, 223);
   --blu: rgb(93, 88, 239);
   --black: rgb(0, 0, 0);
+  --green: rgb(149, 178, 38);
 }
 /* shared styles */
 
@@ -231,41 +232,76 @@ main .Curriculum {
   background: url(./assets/bg.png),
     linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
-.story-boxs {
+.section-cards {
   display: flex;
-  gap: 20px;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.story-card-boxs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.story-card-left {
+  width: 540.27px;
+  height: 650px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
   position: relative;
 }
+.story-card-left img {
+  border-radius: 16px 16px 0px 0px;
+  width: 100%;
+}
+.story-card-left h3 {
+  padding: 50px;
+  font-size: 25px;
+}
+.story-card-left p {
+  padding: 0px 30px;
+}
+#story-bottom-btn {
+  background-color: #000;
+  margin-top: 50px;
+}
 
-.story-box {
+.story-card-right .story-box {
   border-radius: 16px;
-  position: relative;
   background: rgb(255, 255, 255);
+  width: 300px;
+  height: 300px;
+}
+.story-box {
+  position: relative;
 }
 .story-box img {
   width: 100%;
 }
 
-.story-box-content p {
-  width: 433.06px;
-  margin: 0 auto;
+.story-box h2 {
+  font-size: 15px;
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+  padding: 50px 40px;
+  color: #000;
+  text-align: start;
 }
-.story-btn {
-  position: absolute;
-  top: 370px;
-  left: 40px;
+.story-btn-right .btn {
   font-size: 16px;
+  position: absolute;
+  top: 160px;
+  left: 40px;
+  background-color: var(--green);
 }
-.story-box-right {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+.story-btn-left .btn {
+  font-size: 16px;
+  position: absolute;
+  top: 310px;
+  left: 40px;
+  background-color: var(--green);
 }
-.story-box-card {
-  height: 50%;
-}
-.story-section {
-  display: none;
+#story-btn {
+  background-color: rgb(93, 88, 240);
 }
 /* footer */
 
@@ -403,5 +439,9 @@ footer {
   }
   .footer-logo {
     font-size: 40px;
+  }
+  .section-cards {
+    display: grid;
+    flex-wrap: wrap;
   }
 }

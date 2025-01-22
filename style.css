@@ -126,6 +126,15 @@ body {
 }
 
 /* main-section-style */
+hr {
+  border: 2px dashed #ededec;
+}
+.hr-1 {
+  margin-top: -25px;
+}
+.hr-2 {
+  margin-top: 100px;
+}
 
 main .Curriculum {
   background-image: url(./assets/bg.png);
@@ -226,7 +235,6 @@ main .Curriculum {
 /* story-section-styles */
 
 .story-section {
-  margin-top: 100px;
   text-align: center;
   padding: 60px 0px 60px 0px;
   background: url(./assets/bg.png),
@@ -474,5 +482,21 @@ footer {
   #story-box-extra-1,
   #story-box-extra-2 {
     display: block;
+  }
+  hr {
+    display: none;
+  }
+  .story-section {
+    margin-top: 100px;
+    padding: 20px 0px 20px 0px;
+  }
+  .section-content,
+  .Curriculum,
+  .story-section,
+  header {
+    width: 90%;
+  }
+  .hero-img img {
+    width: 100%;
   }
 }
